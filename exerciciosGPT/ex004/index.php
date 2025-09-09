@@ -114,8 +114,30 @@
     </section>
     <br><br>
     <section id="ex004">
+        <h2>
+            Número par ou impar ?
+        </h2>
+        <form action="" method="post">
+            <label for="num">Digite um número</label>
+            <input type="number" name="numero" id="numero">
+            <input type="submit" value="Enviar">
+        </form>
+        <?php   
+        
+        if (!empty($_POST["numero"])){
 
+            $numero = $_POST["numero"]; 
 
+            for ($i = 0; $i < $numero+1; $i++){
+            
+                if ($i % 2 == 0){
+                    echo "<br>$i é Par<br>";
+                } else{
+                    echo "<br>$i é Impar<br>";
+                }
+            }
+        }
+        ?>
     </section>
 </body>
 </html>
