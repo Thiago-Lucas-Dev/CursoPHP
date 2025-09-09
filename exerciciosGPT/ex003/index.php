@@ -32,6 +32,10 @@
             $alturaQuadrada = $altura * $altura;
             $imc = $peso / $alturaQuadrada;
 
+            echo "Suas caracteristícas são:  <br><br>";
+            echo "Seu peso: <strong>$peso</strong><br>";
+            echo "Sua altura: <strong>$altura</strong><br><br>";
+
             echo "Seu IMC é de: " . "<strong>", round($imc, 2), "</strong>", "<br><br>";
 
             if ($imc < 18.5){
